@@ -1,0 +1,630 @@
+#arvin {
+	width: 100%;
+}
+
+.active {
+	background-color: #FFFFFF;
+}
+
+.active a {
+	color: #333;
+}
+
+#loading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+
+#loading img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+section {
+	width: 100%;
+}
+/*第一屏样式*/
+#home {
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	width: 100%;
+	height: auto;
+}
+
+.video {
+	width: 100%;
+	height: 864px;
+}
+
+.video h3,
+h4,
+h5 {
+	position: absolute;
+	width: 100%;
+	font-size: 28px;
+	color: #333;
+	opacity: 0;
+}
+
+.video h5 {
+	left: 0;
+	top: 250px;
+}
+
+.video h4 {
+	left: 0;
+	top: 300px;
+}
+
+.video h3 {
+	left: 0;
+	top: 350px;
+}
+
+.info {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+}
+
+.basicinfo {
+	position: absolute;
+	left: 0;
+	top: 400px;
+	width: 100%;
+	font-size: 18px;
+	color: #333;
+}
+
+.basicinfo p {
+	margin: 20px 0;
+	opacity: 0;
+}
+
+.basicinfo p img {
+	display: block;
+	width: 300px;
+	height: 120px;
+	margin: 0 auto;
+}
+/*.video {
+			width: 100%;
+			height: 864px;
+			position: relative;
+		}
+		.info{
+			width: 50%;
+			margin: 0 auto;
+			position: absolute;
+			left: 25%;
+			top: 5%;
+		}
+		.info h3,h4,h5{
+			width: 100%;
+			font-size: 28px;
+			color: #333;
+			opacity: 1;
+			text-align: center;
+		}
+		.basicinfo{
+			position: absolute;
+			left: 25% ;
+			top: 35%;
+			font-size: 20px;
+			color: #333;
+			opacity: 1;
+			text-align: center;
+			width: 50%;*/
+/*关于我样式*/
+#aboutMe {
+	background: url(../img/banner2.jpg) no-repeat;
+}
+
+.about_title {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50px;
+}
+
+.about_title h3 {
+	transition: all .5s;
+}
+
+.title_en {
+	width: 0;
+	padding: 5px 0;
+	border-top: 2px solid #33CCFF;
+}
+.title_en p {
+	display: none;
+	color: #C8C8DC;
+	font-weight: 500;
+}
+
+.about_main {
+	width: 60%;
+	height: 230px;
+	display: block;
+	background: #a0a0b4;
+	border-radius: 30px;
+}
+
+.about_list {
+	width: 25%;
+	height: auto;
+	float: left;
+	position: relative;
+	z-index: 999;
+	overflow: hidden;
+}
+
+.about_main_eg {
+	width: 100px;
+	height: 100px;
+	float: left;
+	border: 5px solid white;
+	border-radius: 50%;
+	margin: 20px 60px 0 60px;
+}
+
+.about_main_eg:hover {
+	background: white;
+	box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.about_list .about_main_eg:before {
+	content: '';
+	width: 60px;
+	height: 50px;
+	position: absolute;
+	left: 85px;
+	top: 40px;
+	z-index: 9;
+	transition: background 2s, color 1s, box-shadow 1s;
+}
+
+.about_list:nth-of-type(1) .about_main_eg:before {
+	background: url(../img/education.png) no-repeat;
+}
+
+.about_list:nth-of-type(2) .about_main_eg:before {
+	background: url(../img/age.png) no-repeat;
+}
+
+.about_list:nth-of-type(3) .about_main_eg:before {
+	background: url(../img/location.png) no-repeat;
+}
+
+.about_list:nth-of-type(4) .about_main_eg:before {
+	background: url(../img/status.png) no-repeat;
+}
+
+.about_list:hover .about_main_eg:before {
+	-webkit-animation: background 1s forwards;
+	-moz-animation: background 1s forwards;
+	-o-animation: background 1s forwards;
+	animation: background 1s forwards;
+}
+
+.about_main_cn {
+	width: 100px;
+	float: left;
+	height: 70px;
+	margin: 20px 60px;
+	text-align: center;
+	position: relative;
+}
+
+.about_main_cn span {
+	transform: translate(-30px, 10px);
+}
+
+.about_main_cn p {
+	font-size: 14px;
+	transform: translate(30px, 20px);
+}
+
+.about_main_cn:before {
+	display: block;
+	content: "";
+	position: absolute;
+	background: #ccc;
+	height: 2px;
+	width: 100px;
+	bottom: 30px;
+	transform: rotate(-30deg);
+}
+
+.about_info {
+	width: 60%;
+}
+
+.about_info p {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+}
+/*作品展示样式*/
+#skill {
+	background: url(../img/banner11.jpg)no-repeat;
+}
+
+.skill_main {
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	position: relative;
+}
+
+.skill_list {
+	width: 45%;
+	height: 150px;
+	background-color: #2B7FB4;
+	opacity: 0.7;
+	border-radius: 30px;
+	position: absolute;
+	/* -webkit-filter: blur(2px); 
+        -ms-filter: blur(2px);    
+            filter: blur(2px);*/
+}
+
+.skill_list:nth-of-type(1) {
+	top: 15%;
+}
+
+.skill_list:nth-of-type(3) {
+	top: 40%;
+}
+
+.skill_list:nth-of-type(5) {
+	top: 65%;
+}
+
+.skill_list:nth-of-type(2) {
+	top: 15%;
+}
+
+.skill_list:nth-of-type(4) {
+	top: 40%;
+}
+
+.skill_list:nth-of-type(6) {
+	top: 65%;
+}
+
+.skill_list:nth-of-type(2n+1) {
+	left: -58%;
+}
+
+.skill_list:nth-of-type(2n) {
+	right: -58%;
+}
+
+.skill_name {
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+.skill_degree {
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+.skill_degree p {
+	width: 80%;
+	height: 10px;
+	line-height: 10px;
+	border: 1px solid #E74C3C;
+	border-radius: 2px;
+	float: left;
+}
+
+.skill_degree p em {
+	height: 12px;
+	background-color: #E74C3C;
+	display: block;
+}
+
+.skill_degree p:hover em {
+	animation: wave linear 2s;
+}
+
+.skill_degree span {
+	width: 10%;
+	height: 14px;
+	line-height: 14px;
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+#experience {
+	background-color: #779999;
+	opacity: 0.4;
+}
+
+.exp_main {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	margin-top: 50px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide {
+	width: 100%;
+}
+
+#next {
+	position: absolute;
+	top: 45%;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	border: 10px solid white;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	transform: rotate(45deg);
+	margin: 30px;
+}
+
+#prev {
+	position: absolute;
+	top: 45%;
+	left: 50px;
+	width: 50px;
+	height: 50px;
+	border: 10px solid white;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	transform: rotate(-45deg);
+	margin: 30px;
+}
+
+.exp_list {
+	background: rgb(44, 136, 207);
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.exp_mask {
+	background-image: linear-gradient(to right, rgb(44, 136, 207), transparent), url(../img/img3.jpg);
+	background-position: center right;
+	background-blend-mode: normal;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	right: 0;
+}
+
+.swiper-slide:nth-of-type(3) .exp_mask {
+	background-image: linear-gradient(to right, rgb(44, 136, 207), transparent), url(../img/PINGAN2.jpg);
+	background-position: right center;
+}
+
+.swiper-slide:nth-of-type(4) .exp_mask {
+	background-image: linear-gradient(to right, rgb(44, 136, 207), transparent), url(../img/study2.jpg);
+	background-position: right center;
+}
+
+.work {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.work_left {
+	width: 48%;
+	height: 500px;
+	float: left;
+	margin-right: 2%;
+	position: relative;
+	overflow: hidden;
+}
+
+.work_left p {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+}
+
+.work_left p img {
+	width: 100%;
+	display: block;
+}
+
+.work_left p:nth-of-type(1) {
+	left: 50px;
+	top: 50px;
+}
+
+.work_left p:nth-of-type(2) {
+	left: 100px;
+	top: 150px;
+}
+
+.work_left p:nth-of-type(3) {
+	left: 150px;
+	top: 250px;
+}
+
+.work_left p:hover {
+	transform: scale(1.2);
+	transition: 1s all;
+	z-index: 30;
+	box-shadow: 0 0 10px #F2F2F2;
+}
+
+.work_right {
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+
+.work_right span {
+	margin: 10px 50px 10px 0;
+	font-weight: bold;
+}
+/*联系我样式开始*/
+#contactMe {
+	background: url(../img/banner.jpg)no-repeat;
+}
+
+.contact_main {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: url(../img/rainbot.jpg);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clicp: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
+.contact_main p {
+	height: 40px;
+	line-height: 40px;
+	letter-spacing: 2;
+}
+
+.contact_info {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.info_main {
+	width: 100%;
+	height: 100%;
+	margin: 10px 0;
+}
+
+.info_main img {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+.info_main span {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
+}
+
+.info_main p {
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	cursor: pointer;
+	float: left;
+	margin-left: 30px;
+}
+
+/*导航样式*/
+#myMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: rgba(10, 10, 10, 0.1);
+}
+
+.menuList {
+	width: 10%;
+	float: right;
+}
+
+.menuList:nth-of-type(1) {
+	margin-right: 25%;
+}
+
+.menuList a {
+	color: #999999;
+}
+
+/*动画样式*/
+@keyframes background {
+	0% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	50% {
+		-webkit-transform: scale(1.4);
+		transform: scale(1.4);
+	}
+	75% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes light {
+	from {
+		box-shadow: 0px 0px 4px #f00;
+	}
+	to {
+		box-shadow: 0px 0px 16px #f00;
+	}
+	@keyframes wave {
+		20% {
+			transform: scale(0.2);
+			opacity: 0.8;
+		}
+		40% {
+			transform: scale(0.4);
+			opacity: 0.6;
+		}
+		60% {
+			transform: scale(0.6);
+			opacity: 0.4;
+		}
+		80% {
+			transform: scale(0.8);
+			opacity: 0.2;
+		}
+		100% {
+			transform: scale(1);
+			opacity: 0;
+		}
+	}
+}

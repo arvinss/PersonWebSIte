@@ -1,0 +1,41 @@
+@media only screen and (max-width:1000px ) {
+	#arvin{width: 100%;}
+	.active{background-color: #FFFFFF;}
+	.active a{color: #333;}
+	section{width: 100%;}
+	#home{
+		width: 100%;
+		height: 100%;
+	}
+	.section{
+		width: 100%;
+		height: auto;
+	}
+	.video{
+		display: none;
+	}
+	.less_info{
+		width: 100%;
+		height: 864px;
+		display: block;
+	}
+	.less_info h3,h4,h5{
+		position: absolute;
+		width: 100%;
+		font-size: 28px;
+		color: #333;
+		opacity: 0;
+	}
+	.less_info h5{
+		left: 0;
+		top: 250px;
+	}
+	.less_info h4{
+		left: 0;
+		top: 300px;
+	}
+	.less_info h3{
+		left: 0;
+		top: 350px;
+	}
+}
